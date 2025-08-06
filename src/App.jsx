@@ -34,7 +34,7 @@ function DashboardContent() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/doc_page"> {/* Add basename with your repo name */}
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<DashboardContent />} />
